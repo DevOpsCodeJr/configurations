@@ -6,9 +6,9 @@ spring:
     name: muovie-service
   datasource:
     driverClassName: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3380/music-dev
-    username: usr-music
-    password: pwd-music
+    url: jdbc:mysql://localhost:3306/music-dev
+    username: usr-movie
+    password: pwd-movie
   jpa:
     hibernate.ddl-auto: update
     generate-ddl: true
