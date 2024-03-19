@@ -8,14 +8,14 @@ spring:
     gateway:
       mvc:
         routes:
-          - id: movie-service
-            uri: lb://movie-service/
-            predicates:
-              - Path=/movies/**
           - id: catalog-service
             uri: lb://catalog-service/
             predicates:
               - Path=/catalog/**
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
 
 eureka:
   client:
