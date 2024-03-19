@@ -6,12 +6,11 @@ spring:
     name: gateway
   cloud:
     gateway:
-      mvc:
-        routes:
-          - id: catalog-service-route
-            uri: lb://catalog-service/
-            predicates:
-              - Path=/catalog/**
+      routes:
+        - id: catalog-service-route
+          uri: lb://catalog-service/
+          predicates:
+            - Path=/catalog/**
 
 logging:
   level:
