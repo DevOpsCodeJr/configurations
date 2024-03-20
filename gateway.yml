@@ -6,8 +6,6 @@ spring:
     name: gateway
   cloud:
     gateway:
-      default-filters:
-        - name: LogFilter
       routes:
         - id: catalog-service-route
           uri: lb://catalog-service/
