@@ -10,7 +10,7 @@ spring:
         - id: catalog-service-route
           uri: lb://catalog-service/
           predicates:
-            - Path=/catalog/**/*
+            - Path=/catalog/**
 logging:
   level:
     org.springframework.cloud.gateway: DEBUG
