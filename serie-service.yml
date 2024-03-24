@@ -9,6 +9,7 @@ spring:
       version: 4.0.2
   data:
     mongodb:
+      host: 52.202.239.67
       database: test
       port: 27017
 
