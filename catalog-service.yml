@@ -39,7 +39,7 @@ resilience4j:
         slidingWindowSize: 5
         failureRateThreshold: 50
         #        tiempo de espera en milisegundos en estado abierto
-        waitDurationInOpenState: 15000
+        waitDurationInOpenState: 5000
         #        para ver si el servicio se recuperó, le voy a decir, esperá 3 llamadas para poder decir, pasalo a estado cerrado
         permittedNumberOfCallsInHalfOpenState: 3
         #        vamos a definir que hacemos con el estado del servicio cuando se abrio
