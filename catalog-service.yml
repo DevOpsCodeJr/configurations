@@ -23,6 +23,15 @@ eureka:
     lease-expiration-duration-in-seconds: 10
 
 managment:
+  metrics:
+    export:
+      simple:
+        enabled: false
+      prometheus:
+        enabled: true
+  tracing:
+    sampling:
+      probability: 1.0
   endpoints:
     web:
       exposure:
